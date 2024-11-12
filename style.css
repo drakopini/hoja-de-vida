@@ -1,0 +1,162 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3b5998, #0066cc);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    max-width: 800px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #b3c6e0;
+    margin: 0 auto 20px;
+}
+
+.header-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background: #0066cc;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.header-content button:hover {
+    transform: scale(1.1);
+    background: #004080;
+}
+
+/* Estilos para Habilidades */
+#habilidades {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#habilidades h2 {
+    font-size: 2em;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #2a2a2a;
+    color: #0066cc;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #0066cc;
+    color: #fff;
+}
+
+/* Estilo de Contacto */
+#contacto {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.mail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mail-container input {
+    background-color: #333;
+    color: #bfbfbf;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    width: 300px;
+}
+
+.icon-button {
+    background-color: #4b4b4b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.icon-button:hover {
+    background-color: #0066cc;
+}
+/* Estilos para el botón de la hoja de vida */
+#cv-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c, #ff4b2b);
+    background-size: 200% 200%;
+    animation: colorChange 3s ease infinite;
+    transition: transform 0.2s;
+}
+
+/* Animación de cambio de color */
+@keyframes colorChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Efecto al pasar el cursor */
+#cv-button:hover {
+    transform: scale(1.1);
+}

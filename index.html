@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida - Darwin Santiago Manjarrez Pinilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="cv-button" onclick="openCV()">hoja de vida.pdf</button>
+    <section id="perfil">
+        <div class="header-content">
+            <h1>👨‍💻 ¡Hola, soy <span>Darwin Santiago Manjarrez Pinilla</span>!</h1>
+            <p>Estudiante activo de sexto semestre de Ingeniería de Sistemas en la Escuela Tecnológica Instituto Técnico Central. 
+                Tengo conocimientos en programación con lenguajes como Java, Python, PHP y JavaScript, así como en desarrollo web. 
+                Actualmente me encuentro profundizando en bases de datos y he completado un curso en Networking Basics, 
+                lo cual me ha dado una sólida comprensión de redes. Durante mis estudios, he desarrollado habilidades de trabajo en equipo, resolución de problemas y comunicación efectivas. 
+                Me enfoco en la adaptabilidad y en el aprendizaje continuo, esenciales para el desarrollo profesional en el campo de la tecnología.</p>
+        </div>
+       </section>
+    <section id="habilidades">
+        <h2>💻 Habilidades</h2>
+        <div class="skills">
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">HTML & CSS</div>
+        </div>
+    </section>
+    <section id="Contacto">
+        <h2>📧 Contacto</h2>
+        <div class="mail-container">
+            <input type="text" id="email" value="manjarrezpinilla@gmail.com" readonly>
+            <button class="icon-button" onclick="sendEmail()">📤</button>
+            <button class="icon-button" onclick="copyEmail()">📋</button>
+        </div>
+    <footer>
+        <p>&copy; 2024 - Darwin Santiago Manjarrez Pinilla </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
